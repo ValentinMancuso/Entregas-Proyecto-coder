@@ -1,4 +1,4 @@
-//Condicional 
+// Condicional 
 
 // let precio = Number(prompt("Cuanto cuesta tu producto?"));
 // let impuesto =  precio * 0.20;
