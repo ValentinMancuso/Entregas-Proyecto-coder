@@ -17,14 +17,50 @@
 
 //Ciclo
 
-for(let i = 0; i < 10; i++){
-    if (i >= 0 && i<= 5){
-        alert(`Su turno es el numero ${i}. Debe esperar 15 minutos para ser atendido`);
-    }else if(i > 5 && i <= 8){
-        alert(`Su turno es el numero ${i}. Debe esperar 30 minutos para ser atendido`);
+// for(let i = 0; i < 10; i++){
+//     if (i >= 0 && i<= 5){
+//         alert(`Su turno es el numero ${i}. Debe esperar 15 minutos para ser atendido`);
+//     }else if(i > 5 && i <= 8){
+//         alert(`Su turno es el numero ${i}. Debe esperar 30 minutos para ser atendido`);
+//     }else{
+//         alert(`Su turno es el numero ${i}. Debe esperar 1 hora para ser atendido`);
+//     }
+// }
+
+// alert("Nos quedamos sin turnos para agendar");
+
+//Calculadora con funciones
+
+const Suma = (num1, num2) => {
+    return num1 + num2;
+}
+const Resta = (num1, num2) => {
+    return num1 - num2;
+}
+const Multiplicacion = (num1, num2) => {
+    return num1 * num2;
+}
+const Division = (num1, num2) => {
+    return num1 / num2;
+}
+let seguir;
+while(seguir != "no"){
+    let operacion = Number(prompt("Buenas, que operacion queres hacer:\n 1.Suma \n 2.Resta \n 3.Multiplicacion \n 4.Division"));
+    let num1 = Number(prompt("Elegi un primer numero"));
+    let num2 = Number(prompt("Elegi un segundo numero"));
+    if(operacion === 1){
+        alert(Suma(num1, num2));
+    }else if(operacion === 2){
+        alert(Resta(num1, num2));
+    }else if(operacion === 3){
+        alert(Multiplicacion(num1, num2));
+    }else if(operacion === 4){
+        alert(Division(num1, num2));
     }else{
-        alert(`Su turno es el numero ${i}. Debe esperar 1 hora para ser atendido`);
+        alert("Error, debes ingresar un numero del uno al cuatro");
     }
+    seguir = prompt("Pulse cualquier tecla para hacer otra operacion. En caso de que no quiera seguir escriba no");      
 }
 
-alert("Nos quedamos sin turnos para agendar");
+ 
+
