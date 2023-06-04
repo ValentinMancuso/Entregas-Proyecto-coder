@@ -1,0 +1,22 @@
+.nombreProducto{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.listaCarrito{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    border-top-width: 0.5px;
+    border-bottom-width: 0.5px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 100px;
+}
+.caracteristica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
